@@ -1,0 +1,48 @@
+# Python cache and environment
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+venv/
+.env/
+.venv/
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.out
+*.pid
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.tar
+*.bak
+docker-data/
+*.swp
+
+# MongoDB data (if mapped locally)
+data/
+mongodb_data/
+mongo_data/
+
+# Kafka / Zookeeper local data
+kafka-data/
+zookeeper-data/
+
+# Byte-compiled files and test outputs
+*.egg-info/
+build/
+dist/
+
+# Ignore credentials or config files
+config.json
+secrets.json
