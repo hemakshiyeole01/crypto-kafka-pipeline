@@ -29,18 +29,34 @@ Python dependencies (install via `pip install -r requirements.txt`):
 - `pymongo`  
 
 ---
+🧩 Architecture Overview
+CoinGecko API → Kafka Producer → Kafka Topic (api-raw-data)
+             ↓
+        Kafka Streams (filter & transform)
+             ↓
+     Kafka Topic (api-processed-data)
+             ↓
+        Kafka Consumer → MongoDB
 
 ## Project Structure
 
 📁 crypto-kafka-pipeline/
  ├── docker-compose.yml
+ 
  ├── producer/
+ 
  │   └── producer.py
+ 
  ├── stream/
+ 
  │   └── stream_processor.py
+ 
  ├── consumer/
+ 
  │   └── consumer.py
+ 
  ├── requirements.txt
+ 
  └── README.md
 
 
