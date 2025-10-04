@@ -32,16 +32,17 @@ Python dependencies (install via `pip install -r requirements.txt`):
 
 ## Project Structure
 
-CRYPTO-KAFKA-PIPELINE/
-│
-├─ .venv/                # Python virtual environment (good)
-├─ consumer/             # Folder (maybe for consumer-related modules or scripts)
-├─ processor/            # Folder (possibly for any processing scripts)
-├─ producer/             # Folder (possibly for producer-related modules or scripts)
-├─ consumer.py           # Main consumer script
-├─ producer.py           # Main producer script
-├─ docker-compose.yml    # Docker setup
-└─ README.md             # Documentation
+📁 crypto-kafka-pipeline/
+ ├── docker-compose.yml
+ ├── producer/
+ │   └── producer.py
+ ├── stream/
+ │   └── stream_processor.py
+ ├── consumer/
+ │   └── consumer.py
+ ├── requirements.txt
+ └── README.md
+
 
 ## Setup and Running
 
